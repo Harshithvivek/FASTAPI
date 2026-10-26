@@ -29,7 +29,7 @@ class UserInput(BaseModel):
     income_lpa: Annotated[float, Field(..., gt=0, description="Income of the patient in LPA")]
     smoker: Annotated[bool,Field(..., description="Whether the patient is a smoker or not")]
     city: Annotated[str, Field(..., description="City where the patient is living")]
-    occupation: Annotated[Literal["retired","unemployed","government_job","student","Freelancer","private_job","business_owner"], Field(..., description="Occupation of the patient")] 
+    occupation: Annotated[Literal["retired","unemployed","government_job","student","Freelancer","freelancer","private_job","business_owner"], Field(..., description="Occupation of the patient")]
     
     @computed_field
     @property
