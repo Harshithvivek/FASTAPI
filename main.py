@@ -234,3 +234,4 @@ def delete_patient(patient_id: str):
         status_code=200,
         content={"message": "Patient deleted successfully"}
     )
+
